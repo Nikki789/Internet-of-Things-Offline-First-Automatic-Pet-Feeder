@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pet Feeder</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body style="text-align: center;">
+
+<h1> Pet Feeder Menu </h1>
+<h2>Please enter pet feeding time</h2>
+
+<input type="time" name="timestamp" step="1">
+
+<br>
+<button style="margin: 10px;" id="12" class="button">Submit</button>
+<br>
+
+<script>
+
+/* On button click the following code gets the button id and stores it inside
+the "p" variable. Then sends a get request to the web server with the selected
+data from the web page in the form of the IP address with the pin id */
+$(".button").click(function () {
+    const p = $(this).attr('id');
+    pin: p
+    $.get("http://192.168.43.245", {
+        pin: p
+    });
+});
+
+</script>
+</body>
+
+</html>
