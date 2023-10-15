@@ -5,4 +5,4 @@ Components: Arduino Elegoo Uno, ESP8266 ESP-01, Real Time Clock RTC DS3231, and 
 
 The user can enter a hardcoded time value,  which corresponds to the time that the pet would be fed and the food valve will open at the specified time.
 
-The project is currently under development.
+The project is currently in development.
